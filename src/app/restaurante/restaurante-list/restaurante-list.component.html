@@ -1,0 +1,33 @@
+
+
+
+<div class="col" *ngIf="selected">
+    <app-restaurante-detail [restauranteDetail]="selectedRestaurante"></app-restaurante-detail>
+  </div>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">País</th>
+        <th scope="col">Tipo de comida</th>
+        <th scope="col">Fundación</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let restaurante of restaurantes" class="card-block text-decoration-none" (click)="selectRestaurante(restaurante)">
+        <td >
+        {{restaurante.name}}
+        </td>
+        <td>{{restaurante.country}}</td>
+        <td>{{restaurante.cuisine}}</td>
+        <td>{{restaurante.opening_year}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>El restaurante con mayor rating es {{maxNombre}} y tiene un rating de {{maxRating}}</p>
+
+
+
+

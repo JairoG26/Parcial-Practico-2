@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DinosaurioModule } from './dinosaurio/dinosaurio.module';
+import { RestauranteModule } from './restaurante/restaurante.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { DinosaurioModule } from './dinosaurio/dinosaurio.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RestauranteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

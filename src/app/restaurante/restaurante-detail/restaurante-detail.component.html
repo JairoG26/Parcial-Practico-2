@@ -1,0 +1,25 @@
+<div class="panel-body">
+  <div class="border margin p-3">
+    <p class="h3 p-2 author-name">{{ restauranteDetail.name }}</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumb">
+          <img
+            class="img-fluid img-thumbnail border border-danger"
+            src="{{ restauranteDetail.image }}"
+            alt="{{ restauranteDetail.name }}"
+          />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <dl>
+          <dd class="text">{{restauranteDetail.name}}</dd>
+          <dt class="text-title">Description</dt>
+          <dd class="text">{{ restauranteDetail.description }}</dd>
+          <dt class="text-title">Rating</dt>
+          <dd class="text">{{ restauranteDetail.rating}}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
